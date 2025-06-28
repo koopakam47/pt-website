@@ -80,30 +80,28 @@ nav ul li a:hover {
 h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #111;
   margin-bottom: 20px;
   text-align: center;
-}
-
-p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
 }
 
 /* About Section */
 .about-section {
   width: 100%;
-  background-color: #7e96d8;
+  background-color: #7e96d8; /* dark blue background */
   padding: 60px 0;
 }
 
 .about-section h2 {
-  text-align: center;
-  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff;
+  color: #4163c4;
+  padding: 10px 30px;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 40px;
-  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 auto 40px;
+  border-radius: 4px;
 }
 
 .about-content {
@@ -129,12 +127,9 @@ p {
 
 .about-text {
   flex: 1 1 60%;
-  background-color: #4163c4;
-  padding: 30px;
-  border-radius: 8px;
-  font-size: 1.1rem;
+  margin-left: 20px;
   color: #ffffff;
-  box-shadow: 0 2px 8px rgba(255, 246, 246, 0.3);
+  font-size: 1.1rem;
 }
 
 .about-text p {
@@ -216,7 +211,8 @@ form {
   margin-top: 20px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
