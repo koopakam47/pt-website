@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaminski Personal Training</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>Kaminski Personal Training</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Welcome to Kaminski Personal Training! I’m Andrew Kaminski, a certified personal trainer dedicated to helping people achieve real, lasting results. Whether your goal is to lose weight, build strength, or feel more energized day-to-day, I’m here to help you take the first step—and every step after that.</p>
+  </section>
+
+  <!-- Services Preview Section -->
+  <section id="services-preview">
+    <h2>My Services</h2>
+    <div class="service-boxes">
+      <div class="service">
+        <h3>Weight Loss Coaching</h3>
+        <p>Custom workouts and nutrition strategies to help you drop fat and keep it off for good.</p>
+      </div>
+      <div class="service">
+        <h3>Strength Training</h3>
+        <p>Personalized strength programs designed to help you build lean muscle and confidence.</p>
+      </div>
+      <div class="service">
+        <h3>Virtual Training</h3>
+        <p>Train from anywhere with one-on-one virtual sessions tailored to your goals and schedule.</p>
+      </div>
+    </div>
+    <a href="services.html" class="btn">See All Services</a>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xpwrklol" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kaminski Personal Training. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
