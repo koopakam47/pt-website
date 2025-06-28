@@ -94,7 +94,7 @@ p {
 /* About Section */
 .about-section {
   width: 100%;
-  background-color: #1e1e1e;
+  background-color: #7735cc;
   padding: 60px 0;
 }
 
@@ -130,7 +130,7 @@ p {
 
 .about-text {
   flex: 1 1 60%;
-  background-color: #2c2c2c;
+  background-color: #7e1b8b;
   padding: 30px;
   border-radius: 8px;
   font-size: 1.1rem;
