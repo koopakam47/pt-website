@@ -80,39 +80,43 @@ nav ul li a:hover {
 h2 {
   font-size: 2rem;
   font-weight: 700;
+  color: #111;
   margin-bottom: 20px;
   text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 /* About Section */
 .about-section {
   width: 100%;
-  background-color: #7e96d8; /* dark blue background */
-  padding: 60px 0;
+  background-color: #7e96d8;
+  padding: 0;
 }
 
 .about-section h2 {
-  position: relative;
-  display: inline-block;
   background-color: #ffffff;
-  color: #4163c4;
-  padding: 10px 30px;
+  color: #111;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 40px;
   font-size: 2rem;
-  font-weight: bold;
   text-transform: uppercase;
-  margin: 0 auto 40px;
-  border-radius: 4px;
+  font-weight: bold;
 }
 
 .about-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 60px 20px;
   gap: 40px;
-  padding: 0 20px;
+  flex-wrap: wrap;
 }
 
 .about-image {
@@ -127,13 +131,13 @@ h2 {
 
 .about-text {
   flex: 1 1 60%;
-  margin-left: 20px;
-  color: #ffffff;
   font-size: 1.1rem;
+  color: #ffffff;
 }
 
 .about-text p {
   color: #ffffff;
+  line-height: 1.7;
 }
 
 /* Homepage Alternating Layout */
@@ -243,3 +247,4 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+
