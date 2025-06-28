@@ -8,7 +8,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #fdfdfd;
+  background-color: #ffffff; /* White background for outer margins */
   color: #333;
   padding: 0;
 }
@@ -58,9 +58,25 @@ nav ul li a {
 section {
   max-width: 1100px;
   margin: 40px auto;
-  padding: 0 20px;
+  padding: 60px 20px;
+  border-radius: 8px;
 }
 
+/* Section-Specific Background Colors */
+#about {
+  background-color: #f4faff; /* light blue */
+}
+
+#services,
+#services-preview {
+  background-color: #fef6f0; /* light tan */
+}
+
+#contact {
+  background-color: #f0f8f4; /* light green */
+}
+
+/* Headings & Paragraphs */
 h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
