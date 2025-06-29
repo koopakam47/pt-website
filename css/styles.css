@@ -309,25 +309,25 @@ p {
 
 /* Contact Section */
 .contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0; /* Remove top padding */
+  margin: 0;
   width: 100vw;
-  background-color: rgb(10, 189, 198); /* light tint */
-  padding: 60px 20px;
-  box-sizing: border-box;
+  background-color: rgba(0, 100, 255, 0.05);
 }
 
 .contact-section h2 {
+  width: 100vw;
   background-color: #ffffff;
   color: #111;
   text-align: center;
   padding: 20px 0;
-  margin: 0;
+  margin: 0; /* Remove margin */
   font-size: 2rem;
   font-weight: 500;
   text-transform: none;
-  width: 100vw;        /* full viewport width */
-  position: relative;  /* prevents overflow from absolute parents */
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 
