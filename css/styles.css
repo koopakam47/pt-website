@@ -308,57 +308,50 @@ p {
 }
 
 /* Contact Section */
+/* Contact Section Full Width Heading */
 .contact-section {
   width: 100%;
-  background-color: #ffffff; /* or your preferred background */
-  padding: 0; /* reset padding */
   margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
-.contact-container h2 {
-  background-color: rgb(10, 189, 198);
-  color: #111;
+.contact-section h2 {
+  background-color: rgb(10, 189, 198); /* your chosen color */
+  color: #ffffff;
   text-align: center;
   padding: 20px 0;
-  margin: 0; /* Remove default margins */
+  margin: 0;
   font-size: 2rem;
   font-weight: 500;
-  width: 100vw;          /* Stretch across full viewport */
-  position: relative;    /* Avoid being constrained by parent container */
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
-}
-
-
-#contact {
-  padding: 40px 20px 60px; /* top padding creates the space between h2 and form */
   width: 100vw;
-  margin: 0 auto;
-  text-align: center;
 }
 
+/* Contact Form Container */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+  box-sizing: border-box;
+}
 
-form {
+/* Contact Form */
+.contact-container form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
 }
 
-input,
-textarea {
+.contact-container input,
+.contact-container textarea {
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-button[type="submit"] {
+.contact-container button[type="submit"] {
   padding: 10px 20px;
   background-color: rgb(10, 189, 198);
   color: white;
@@ -368,7 +361,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.contact-container button[type="submit"]:hover {
   background-color: rgb(24, 135, 141);
 }
 
