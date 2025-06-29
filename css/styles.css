@@ -330,7 +330,6 @@ p {
   padding: 30px 20px 60px; /* top padding creates the space between h2 and form */
   max-width: 800px;
   margin: 0 auto;
-  background-color: transparent; /* no background here, already in section */
 }
 
 
