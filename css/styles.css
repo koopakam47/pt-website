@@ -310,7 +310,7 @@ p {
 /* Contact Section */
 .contact-section {
   width: 100vw;
-  background-color: rgba(0, 100, 255, 0.05); /* light tint */
+  background-color: rgb(10, 189, 198); /* light tint */
   padding: 60px 20px;
   box-sizing: border-box;
 }
@@ -358,7 +358,7 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  background-color: rgb(10, 189, 198);
+  background-color: #ffffff;
   border-top: 1px solid #ddd;
   font-size: 0.9rem;
   color: #666;
