@@ -139,7 +139,7 @@ p {
 }
 
 .hero-buttons .btn.primary:hover {
-  background-color: rgb(10, 189, 198);
+  background-color: rgb(24, 135, 141);
 }
 
 /* Secondary Button */
@@ -349,7 +349,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: rgb(10, 189, 198);
+  background-color: rgb(24, 135, 141);
 }
 
 
@@ -358,7 +358,7 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  background-color: #fafafa;
+  background-color: rgb(10, 189, 198);
   border-top: 1px solid #ddd;
   font-size: 0.9rem;
   color: #666;
@@ -373,7 +373,7 @@ footer {
 }
 
 .footer-links a {
-  color: #0077cc;
+  color: rgb(10, 189, 198);
   text-decoration: none;
   font-weight: 500;
 }
