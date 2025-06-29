@@ -309,34 +309,35 @@ p {
 
 /* Contact Section */
 .contact-section {
-  width: 100vw;
-  background-color: rgb(10, 189, 198); /* or your preferred background */
+  width: 100%;
+  background-color: #ffffff; /* or your preferred background */
   padding: 0; /* reset padding */
   margin: 0;
 }
 
-.contact-section h2 {
-  width: 100%;
-  background-color: #ffffff;
+.contact-container h2 {
+  background-color: rgb(10, 189, 198);
   color: #111;
   text-align: center;
   padding: 20px 0;
-  margin: 0; /* remove bottom margin to control spacing precisely */
+  margin: 0; /* Remove default margins */
   font-size: 2rem;
   font-weight: 500;
+  width: 100vw;          /* Stretch across full viewport */
+  position: relative;    /* Avoid being constrained by parent container */
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
 }
 
+
 #contact {
-  padding: 30px 20px 60px; /* top padding creates the space between h2 and form */
-  max-width: 800px;
+  padding: 40px 20px 60px; /* top padding creates the space between h2 and form */
+  width: 100vw;
   margin: 0 auto;
+  text-align: center;
 }
 
-
-
-#contact {
-  width: 100%;
-}
 
 form {
   display: flex;
