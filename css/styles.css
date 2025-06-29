@@ -65,7 +65,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #0077cc;
+  color: rgb(10, 189, 198);
 }
 
 /* Headings */
@@ -134,19 +134,19 @@ p {
 
 /* Primary Button */
 .hero-buttons .btn.primary {
-  background-color: #0077cc;
+  background-color: rgb(10, 189, 198);
   color: white;
 }
 
 .hero-buttons .btn.primary:hover {
-  background-color: #005fa3;
+  background-color: rgb(10, 189, 198);
 }
 
 /* Secondary Button */
 .hero-buttons .btn.secondary {
   background-color: #ffffff;
-  color: #0077cc;
-  border: 2px solid #0077cc;
+  color: rgb(10, 189, 198);
+  border: 2px solid rgb(10, 189, 198);
 }
 
 .hero-buttons .btn.secondary:hover {
@@ -164,7 +164,7 @@ p {
 /* ABOUT ME SECTION */
 .about-section {
   width: 100%;
-  background-color: #0077cc;
+  background-color: rgb(10, 189, 198);
   padding: 0;
   margin: 0;
 }
@@ -340,7 +340,7 @@ textarea {
 
 button[type="submit"] {
   padding: 10px 20px;
-  background-color: #0077cc;
+  background-color: rgb(10, 189, 198);
   color: white;
   border: none;
   border-radius: 5px;
@@ -349,7 +349,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #005fa3;
+  background-color: rgb(10, 189, 198);
 }
 
 
