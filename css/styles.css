@@ -310,7 +310,7 @@ p {
 /* Contact Section */
 .contact-section {
   width: 100vw;
-  background-color: #f1f6ff; /* or your preferred background */
+  background-color: rgb(10, 189, 198); /* or your preferred background */
   padding: 0; /* reset padding */
   margin: 0;
 }
