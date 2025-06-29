@@ -364,3 +364,41 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+footer div {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #0077cc;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.footer-links a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links .divider {
+  color: #888;
+}
+
+
