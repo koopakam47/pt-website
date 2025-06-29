@@ -309,27 +309,30 @@ p {
 
 /* Contact Section */
 .contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0 40px 0; /* top, right, bottom, left */
-
-  margin: 0;
   width: 100vw;
-  background-color: rgba(0, 100, 255, 0.05);
+  background-color: #f1f6ff; /* or your preferred background */
+  padding: 0; /* reset padding */
+  margin: 0;
 }
 
 .contact-section h2 {
-  width: 100vw;
+  width: 100%;
   background-color: #ffffff;
   color: #111;
   text-align: center;
   padding: 20px 0;
-  margin: 0; /* Remove margin */
+  margin: 0; /* remove bottom margin to control spacing precisely */
   font-size: 2rem;
   font-weight: 500;
-  text-transform: none;
 }
+
+#contact {
+  padding: 30px 20px 60px; /* top padding creates the space between h2 and form */
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: transparent; /* no background here, already in section */
+}
+
 
 
 #contact {
