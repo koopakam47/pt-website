@@ -320,8 +320,8 @@ p {
 .services-section {
   display: flex;
   width: 100vw;
-  background-color: #f8f9fc;
-  padding: 40px 0;
+  background-color: transparent;
+  padding: 0;
   justify-content: space-evenly;
   flex-wrap: wrap; /* Enables wrapping on smaller screens */
 }
@@ -330,8 +330,8 @@ p {
 .services-section {
   display: flex;
   width: 100vw;
-  background-color: #f8f9fc;
-  padding: 0 0;
+  background-color: transparent;
+  padding: 0;
   justify-content: space-evenly;
   flex-wrap: wrap;
   min-height: 50vh; /* Match other sections like hero or about */
@@ -341,15 +341,58 @@ p {
 .service {
   flex: 1 1 33%;
   min-width: 250px;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  border-right: 1px solid #ddd;
+  padding: 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 300px;
+  border-right: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 300px; /* Optional: ensures each box looks substantial */
-} /* ← This bracket was missing */
+  align-items: center;
+}
+
+/* Add overlays for readability */
+.service::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+  border-radius: 0;
+}
+
+.service-title, .service-btn {
+  position: relative;
+  z-index: 2;
+}
+
+/* Assign background images to the whole service box */
+.service.strength {
+  background-image: url('https://images.unsplash.com/photo-1562771242-a02d9090c90c?q%3D80%26w%3D2671%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.1.0%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.service.nutrition {
+  background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80');
+}
+.service.virtual {
+  background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80');
+}
+
+/* Remove background images from service-title only, not from .service containers */
+.service-title.strength, .service-title.nutrition, .service-title.virtual {
+  background-image: none !important;
+}
+
+/* Adjust service-title for better contrast */
+.service-title {
+  color: #fff;
+  background: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
 
 .service:last-child {
   border-right: none;
@@ -358,7 +401,7 @@ p {
 .service h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #111;
+  color: #ffffff;
 }
 
 .service p {
@@ -372,9 +415,9 @@ p {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  border: 2px solid #000;
+  border: 2px solid #ffffff;
   background-color: transparent;
-  color: #000;
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -385,33 +428,6 @@ p {
   background-color: rgb(10, 189, 198);
   color: #fff;
   border-color: rgb(10, 189, 198);
-}
-
-.service-title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: white;
-  text-align: center;
-  padding: 30px 0;
-  background-size: cover;
-  background-position: center;
-  border-radius: 6px;
-  min-height: 150px; /* 🔹 Add this line */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.strength {
-  background-image: url('https://via.placeholder.com/600x300');
-}
-
-.nutrition {
-  background-image: url('https://via.placeholder.com/600x300');
-}
-
-.virtual {
-  background-image: url('https://via.placeholder.com/600x300');
 }
 
 /* Contact Section */
@@ -501,4 +517,96 @@ footer {
 .footer-links a:hover {
   color: rgb(10, 189, 198);
   text-decoration: underline;
+}
+
+/* Testimonials Overview Section */
+.testimonials-overview-section {
+  background: #fff;
+  padding: 0 0 60px 0;
+  width: 100vw;
+}
+
+.testimonials-overview-section h2 {
+  background-color: rgb(10, 189, 198);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 0 40px 0;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 100vw;
+  letter-spacing: 0.5px;
+}
+
+/* Testimonials Overview Section - stack vertically, correct background, increase width */
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.testimonial-box {
+  width: 70vw;
+  min-width: 280px;
+  max-width: 900px;
+  background: rgb(10, 189, 198);
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 40px;
+  text-align: left;
+  margin-bottom: 0;
+  gap: 32px;
+}
+
+.testimonial-box p {
+  color: #fff;
+}
+
+.testimonial-box span {
+  color: #eef6ff;
+}
+
+/* Improve testimonial box formatting: better spacing and headshot border */
+.testimonial-headshot {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  background: #fff;
+}
+
+.testimonial-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .testimonial-box {
+    width: 95vw;
+    min-width: unset;
+    max-width: unset;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    gap: 0;
+  }
+  .testimonial-headshot {
+    margin-bottom: 16px;
+  }
+  .testimonial-content {
+    align-items: center;
+  }
 }
